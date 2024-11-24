@@ -1,0 +1,29 @@
+{
+    "name": "pixeldev/uxmodal-bundle",
+    "description": "A Ux Modal bundle for Twig width Tailwind CSS and Alpine JS",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "twig/twig": "^2.7 || ^3.0"
+
+    },
+    "require-dev": {
+        "symplify/easy-coding-standard": "^11.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pixel\\UxModalBundle\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "php-http/discovery": false
+        }
+    },
+    "scripts": {
+        "analyse": "composer-require-checker"
+    }
+}
