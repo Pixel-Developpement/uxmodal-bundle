@@ -49,10 +49,12 @@
                     {% block bodyModal %}{% endblock %}
                 </div>
                 {% if isFooterModal is defined %}
-                    {# Dialog Footer #}
-                    <div class="{% block modalFooterOverrideClass %}{{ footerModalClass }}{% endblock %} {% block modalFooterClass %}{% endblock %}">
-                        {% block footerModal %}{% endblock %}
-                    </div>
+                    {% if isFooterModal == true %}
+                        {# Dialog Footer #}
+                        <div class="{% block modalFooterOverrideClass %}{{ footerModalClass }}{% endblock %} {% block modalFooterClass %}{% endblock %}">
+                            {% block footerModal %}{% endblock %}
+                        </div>
+                    {% endif %}
                 {% endif %}
             </div>
         {% endblock %}

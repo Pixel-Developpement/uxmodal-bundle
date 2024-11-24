@@ -48,7 +48,7 @@ See this documentation : https://www.penguinui.com/docs/getting-started
 Open tailwind.config.js and add the following line to the content table
 
 ```javascript
-'./vendor/pixeldev/uxmodal-bundle/Resources/views/**/*.html.twig'
+'./vendor/pixeldev/uxmodal-bundle/src/Resources/views/**/*.html.twig'
 ```
 
 ## Use
